@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:baselineAligned="false"
+    android:background="@drawable/usual"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/item_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#5F9B95"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/Theme.AppCompat.Light"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/live_title_bg">
+
+                        <Button
+                            android:id="@+id/live_back"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/ic_backup"/>
+
+                        <TextView
+                            android:id="@+id/live_model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="20dp"
+                            android:textStyle="normal"
+                            android:text="当前播放"
+                            />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/live_item"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/player_list" />
+
+                    <Button
+                        android:id="@+id/live_light"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_toLeftOf="@id/live_item"
+                        android:layout_toStartOf="@+id/live_item"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/light_setting" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@drawable/round"
+                android:id="@+id/imageView" />
+
+            <Button
+                android:id="@+id/live_voice_up"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/voice_loud" />
+
+            <Button
+                android:id="@+id/live_back_music"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_alignStart="@+id/imageView"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/player_low" />
+
+            <Button
+                android:id="@+id/live_forward"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/imageView"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/player_fast" />
+
+            <Button
+                android:id="@+id/live_voice_down"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/voice_low" />
+
+            <Button
+                android:id="@+id/live_breath"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/light_breath" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom|center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/live_cycle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/player_shunxu"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/live_play"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:background="@drawable/player_play"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                />
+
+            <Button
+                android:id="@+id/live_last"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/player_previous"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                />
+
+            <Button
+                android:id="@+id/live_off_light"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/lightno"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/live_next"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/player_next"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                />
+
+            <Button
+                android:id="@+id/live_pause"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/player_pause"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                />
+
+            <Button
+                android:id="@+id/live_random"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/player_random"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical">
+            </Button>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>
+
+

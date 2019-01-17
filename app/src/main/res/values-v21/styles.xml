@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NoActivityTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ActivityTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@color/colorToolbar</item>
+    </style>
+
+    <style name="LoginActivityTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@color/colorLogin</item>
+    </style>
+</resources>
