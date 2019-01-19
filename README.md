@@ -1,4 +1,4 @@
-# IntelligentLamp
+# Intelligent Lamp
 
 此 APP 可作为硬件蓝牙控制器和本地音乐播放器使用，主要具备以下功能：
 
