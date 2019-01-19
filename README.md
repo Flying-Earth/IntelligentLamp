@@ -6,7 +6,6 @@
 
 2. 充当蓝牙控制器的作用，并结合色环采集颜色，进而控制灯光的颜色变化及音乐播放。
 
-
 ## APP 功能展示
 
 ![主要功能展示](https://img-blog.csdnimg.cn/20190119191941185.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21veXVjaGFvc2hlbmc=,size_16,color_FFFFFF,t_70)
