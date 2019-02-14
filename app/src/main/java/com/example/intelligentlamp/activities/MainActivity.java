@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.nav_call:
                         name = "Call";
-                        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "18813176960"));
+                        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "18888888888"));
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                         break;
